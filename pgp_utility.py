@@ -28,7 +28,8 @@ with open(path, 'rb') as file:
     status = gpg.encrypt_file(file, recipients=Any, symmetric=True, passphrase=symmetricKey,
                               output=path + ".encrypted", armor=False, extra_args=extra_args)
 
-print(status.ok)
+if(status.ok):
+    print("File encrypted successfully");
 
 # Decrypt
 
@@ -36,4 +37,5 @@ with open(encryptedFilePath, 'rb') as file:
     status = gpg.decrypt_file(
         file, passphrase=symmetricKey, output=path + ".decrypted")
 
-print(status.ok)
+if(status.ok):
+    print("File decrypted successfully");
