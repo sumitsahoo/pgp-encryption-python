@@ -29,7 +29,7 @@ with open(path, 'rb') as file:
                               output=path + ".encrypted", armor=False, extra_args=extra_args)
 
 if(status.ok):
-    print("File encrypted successfully");
+    print("File encrypted successfully")
 
 # Decrypt
 
@@ -38,4 +38,4 @@ with open(encryptedFilePath, 'rb') as file:
         file, passphrase=symmetricKey, output=path + ".decrypted")
 
 if(status.ok):
-    print("File decrypted successfully");
+    print("File decrypted successfully")
