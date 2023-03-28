@@ -6,7 +6,7 @@ import os
 
 gpg = gnupg.GPG()   # '/usr/local/bin/gpg' path is optional but gnupg needs to be installed
 
-# Encrypt
+# Take path and key as an input 
 
 symmetricKey = input("Enter password: ")
 path = input("Enter complete path to the file: ")
