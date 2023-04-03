@@ -19,3 +19,20 @@ Link: https://gnupg.org
 Python-GnuPG is a Python module that provides a high-level interface for working with GnuPG (GNU Privacy Guard) in Python. It allows developers to perform various GnuPG operations, such as encryption, decryption, signing, and verifying digital signatures, directly from Python scripts. Python-GnuPG is built on top of the GnuPG software and provides a more user-friendly and Pythonic way to interact with GnuPG. It supports both synchronous and asynchronous operations, and can be used with Python 2 and 3. Python-GnuPG is widely used by developers who need to integrate GnuPG functionality into their Python applications, such as email clients, backup software, and other security-related applications.
 
 Library Documentation: https://gnupg.readthedocs.io/en/latest
+
+## Usage
+
+### Encrypt
+
+```
+with open(path, 'rb') as file:
+        encryptionStatus = gpg.encrypt_file(file, recipients=Any, symmetric=True, passphrase=symmetricKey, output=path + ".encrypted", armor=False, extra_args=extra_args_encryption)
+
+```
+
+### Decrypt
+
+```
+with open(encryptedFilePath, 'rb') as file:
+            decryptionStatus = gpg.decrypt_file(file, passphrase=symmetricKey, output=path + ".decrypted")
+```
