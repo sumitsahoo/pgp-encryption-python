@@ -34,5 +34,5 @@ with open(path, 'rb') as file:
 
 ```
 with open(encryptedFilePath, 'rb') as file:
-            decryptionStatus = gpg.decrypt_file(file, passphrase=symmetricKey, output=path + ".decrypted")
+        decryptionStatus = gpg.decrypt_file(file, passphrase=symmetricKey, output=path + ".decrypted")
 ```
