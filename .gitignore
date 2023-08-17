@@ -1,3 +1,9 @@
+# Cache files
+.cache
+
+# macOS
+.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -83,6 +89,7 @@ ipython_config.py
 
 # pyenv
 .python-version
+poetry.lock
 
 # pipenv
 #   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.

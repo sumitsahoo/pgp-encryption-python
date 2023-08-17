@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pgp-encryption-python"
+version = "1.0.0"
+description = "Use GnuPG to encrypt and decrypt file"
+authors = ["Sumit Sahoo <sumitsahoo1988@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "pgp_encryption_python"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-gnupg = "^0.5.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
