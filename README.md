@@ -41,7 +41,7 @@ with open(encryptedFilePath, 'rb') as file:
 
 MIT License
 
-Copyright (c) 2023 Sumit Sahoo
+Copyright © 2026 Sumit Sahoo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
